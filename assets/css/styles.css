@@ -78,7 +78,12 @@ body {
   height: 180px;
   margin: auto;
   border-radius: 50%;
-  background: #cfe3d6;
+  background: radial-gradient(
+    circle at top,
+    #2f4f3e,
+    #1e3329
+  );
+  color: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,6 +91,11 @@ body {
   font-family: 'Nunito', sans-serif;
   transition: transform 4s ease-in-out;
   transform: scale(1);
+
+  /* sensación de refugio */
+  box-shadow:
+    0 0 0 6px rgba(255,255,255,0.18),
+    0 14px 28px rgba(0,0,0,0.35);
 }
 
 /* Audio */
