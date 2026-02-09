@@ -1,1 +1,135 @@
-/* estilos principales */
+:root {
+  --verde-oscuro: #2f4f3e;
+  --verde-suave: #e8f1ec;
+  --crema: #f6f3ec;
+  --texto: #2c2c2c;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  color: var(--texto);
+  background: var(--verde-suave);
+  line-height: 1.6;
+}
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+}
+
+/* ================= MENSAJE DE FE ================= */
+.mensaje-fe {
+  background: var(--crema);
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* ================= CALMA ================= */
+.calma {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.respiracion {
+  margin-bottom: 30px;
+}
+
+#breathCircle {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  border-radius: 50%;
+  background: #cfe3d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-family: 'Nunito', sans-serif;
+  transition: transform 4s ease-in-out;
+}
+
+/* Audio */
+.audio-control button {
+  padding: 12px 20px;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  border-radius: 20px;
+  background: var(--verde-oscuro);
+  color: white;
+  cursor: pointer;
+}
+
+/* ================= AYUDA ================= */
+.ayuda {
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.ayuda h2 {
+  margin-bottom: 20px;
+}
+
+.help-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 280px;
+  background: #8b3a3a;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ================= ANCLAS ================= */
+.anclas {
+  display: flex;
+  gap: 10px;
+  padding: 30px 20px;
+}
+
+.anclas img {
+  width: 50%;
+  border-radius: 20px;
+  object-fit: cover;
+}
