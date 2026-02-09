@@ -3,8 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>Mi Refugio Seguro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <h1>Mi Refugio Seguro</h1>
+
+  <!-- HERO / PORTADA -->
+  <header class="hero">
+    <img src="assets/img/bosque.jpeg" alt="Bosque tranquilo">
+    <div class="hero-text">
+      <h1>Estás a salvo aquí</h1>
+      <p>Respira, Dios está contigo</p>
+    </div>
+  </header>
+
+  <!-- MENSAJE DE FE -->
+  <section class="mensaje-fe">
+    <p>
+      Dios conoce tu corazón y nunca te abandona.  
+      Su amor te sostiene en medio de la tormenta.
+    </p>
+  </section>
+
+  <!-- HERRAMIENTAS DE CALMA -->
+  <section class="calma">
+
+    <!-- RESPIRACIÓN -->
+    <div class="respiracion">
+      <div id="breathCircle">Inhala</div>
+    </div>
+
+    <!-- AUDIO -->
+    <div class="audio-control">
+      <button id="audioBtn">🎧 Escuchar sonido calmante</button>
+      <audio id="relaxAudio" src="assets/audio/calma.mp3" loop></audio>
+    </div>
+
+  </section>
+
+  <!-- AYUDA INMEDIATA -->
+  <section class="ayuda">
+    <h2>No estás sola</h2>
+
+    <a href="tel:+50500000000" class="help-btn">📞 Llamar a Mamá</a>
+    <a href="tel:+50500000001" class="help-btn">📞 Llamar a Mini</a>
+    <a href="tel:+50500000002" class="help-btn">📞 Llamar a Víctor</a>
+  </section>
+
+  <!-- ANCLAS DE VIDA -->
+  <section class="anclas">
+    <img src="assets/img/familia.jpeg" alt="Familia">
+    <img src="assets/img/mascotas.jpeg" alt="Mascotas">
+  </section>
+
+  <!-- JS -->
+  <script src="assets/js/script.js"></script>
+
 </body>
 </html>
